@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>BusNavi 1.3.1 RC</title>
+  </head>
+  <body style="text-align: center" bgcolor="E0E0E0">
+    <br>
+    <canvas id="unity-canvas" width=screen.width height=screen.height style="width: 100%; height: 100%; background: #464646"></canvas>
+    <script src="Build/BusNavi_1_3_1_RC.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/BusNavi_1_3_1_RC.data.unityweb",
+        frameworkUrl: "Build/BusNavi_1_3_1_RC.framework.js.unityweb",
+        codeUrl: "Build/BusNavi_1_3_1_RC.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Kanade  from Wako PC Lab.",
+        productName: "BusNavi",
+        productVersion: "1.3.0 RC",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
